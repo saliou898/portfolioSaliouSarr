@@ -14,16 +14,196 @@
         <div class="links">
           <ul>
             <li><a href="">Accueil</a></li>
-            <li><a href="">A propos</a></li>
-            <li><a href="">Projets</a></li>
+            <li><a href="#apros">A propos</a></li>
+            <li><a href="#skills">Competences</a></li>
             <li><a href="">Services</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </nav>
     </header>
     <!-- le corps -->
-    <main></main>
+    <main>
+      <!-- 1ER sectin  -->
+      <section class="sect1">
+        <div class="heros">
+          <div class="hero">
+            <img src="assets/img/hero.png" alt="" />
+          </div>
+          <div class="itm-hero">
+            <div id="apros"><h3>A propos de moi</h3></div>
+            <div>
+              <h4>Du Frontend au Backend, je construis le Web et le mobile</h4>
+            </div>
+            <div>
+              <p>
+                Je suis Saliou Sarr, développeur Full Stack Web et Mobile
+                passionné par la création d’applications modernes, performantes
+                et intuitives. Je conçois et développe des solutions complètes,
+                de l’interface utilisateur jusqu’au back-end, en mettant
+                l’accent sur la qualité du code, l’expérience utilisateur et la
+                performance. Curieux, rigoureux et toujours en apprentissage,
+                j’aime transformer des idées en produits numériques fonctionnels
+                et efficaces. J’ai travaillé sur plusieurs projets web et
+                mobiles qui m’ont permis de renforcer mes compétences en
+                développement, en conception d’interfaces et en résolution de
+                problèmes. Mon objectif est de créer des applications utiles,
+                rapides et accessibles, tout en apportant une réelle valeur aux
+                utilisateurs et aux entreprises.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- La 2em section  -->
+      <section class="sect2">
+        <div id="skills" class="skills">
+          <div><h3>Mes compétences</h3></div>
+          <div class="cont-skills">
+            <div class="skill">
+              <div class="skill-top">
+                <span>HTML</span>
+                <span>70%</span>
+              </div>
+
+              <div class="progress">
+                <div class="progress-bar"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="skill-top">
+                <span>CSS</span>
+                <span>80%</span>
+              </div>
+
+              <div class="progress">
+                <div class="progress-bar css"></div>
+              </div>
+            </div>
+            <!-- ******************* Python **************** -->
+            <div class="skill">
+              <div class="skill-top">
+                <span>Python</span>
+                <span>60%</span>
+              </div>
+
+              <div class="progress">
+                <div class="progress-bar pyton"></div>
+              </div>
+            </div>
+            <!-- ******************* PHP**************** -->
+            <div class="skill">
+              <div class="skill-top">
+                <span>Language PHP</span>
+                <span>50%</span>
+              </div>
+
+              <div class="progress">
+                <div class="progress-bar php"></div>
+              </div>
+            </div>
+            <!-- ******************* Language C  **************** -->
+            <div class="skill">
+              <div class="skill-top">
+                <span>Language C</span>
+                <span>80%</span>
+              </div>
+
+              <div class="progress">
+                <div class="progress-bar enC"></div>
+              </div>
+            </div>
+            <!-- ******************* En Algorithmique**************** -->
+            <div class="skill">
+              <div class="skill-top">
+                <span>En Algorithmique</span>
+                <span>90%</span>
+              </div>
+
+              <div class="progress">
+                <div class="progress-bar algo"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ************************ La 3em section ************************ -->
+      <section class="sect3">
+        <div id="contact" class="contact">
+          <div><h3>Me contacter</h3></div>
+          <div class="socials">
+            <div class="social">
+              <di><h4>Mes Réseaux</h4></di>
+              <div class="s-itms">
+                <div><img src="assets/img/fac.png" alt="" /></div>
+                <div>
+                  <p><a href="">Facebook</a></p>
+                </div>
+              </div>
+              <div class="s-itms">
+                <div><img src="assets/img/ins.png" alt="" /></div>
+                <div>
+                  <p><a href="">Instagram</a></p>
+                </div>
+              </div>
+              <div class="s-itms">
+                <div>
+                  <img class="wat" src="assets/img/whasvg.svg" alt="" />
+                </div>
+                <div>
+                  <p><a href="">WhatssApp</a></p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div>
+                <h4>Formulaire</h4>
+                <form action="">
+                  <div class="">
+                    <div class="formu">
+                      <div class="iform">
+                        <label for="">Prenom: </label>
+                        <input
+                          type="text"
+                          placeholder="Prenom"
+                          minlength="3"
+                          required
+                        />
+                      </div>
+                      <div class="iform">
+                        <label name="nom" for="">Nom: </label>
+                        <input
+                          name="nom"
+                          type="text"
+                          placeholder="Nom"
+                          required
+                          minlength="2"
+                        />
+                      </div>
+                    </div>
+                    <div class="msg">
+                      <label name="msg" for="">Message: </label>
+                      <textarea
+                        required
+                        minlength="20"
+                        maxlength="100"
+                        name="msg"
+                        id=""
+                      >
+                      </textarea>
+                    </div>
+                    <div class="bnt">
+                      <button type="submit">Envoyer</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <!-- le pied de page -->
     <footer></footer>
   </body>

@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #fffefc;
@@ -14,6 +18,11 @@ nav {
   height: 70px;
   box-shadow: 3px 1px 4px 2px rgb(24 23 23 / 8%);
   padding: 0 40px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
 }
 nav ul {
   display: flex;
@@ -58,4 +67,197 @@ nav ul li a:hover::before {
   box-shadow: 3px 1px 4px 2px rgb(24 23 23 / 8%);
   border-radius: 10px;
   padding: 0 10px;
+}
+
+/* ********************** section 1 ************************** */
+.heros {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0 40px;
+  margin-top: 80px;
+}
+/* .hero {
+  width: 500px;
+  height: 500px;
+  border: 6px solid #f6961d;
+  border-radius: 50%;
+  background-image: url("/assets/img/hero.png");
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+} */
+.hero {
+  width: 500px;
+  height: 500px;
+  border: 6px solid #f6961d;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  height: 160%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.heros h3 {
+  font-size: 50px;
+  color: #f6961d;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+.heros h4 {
+  font-size: 22px;
+}
+.itm-hero {
+  display: flex;
+  flex-direction: column;
+  row-gap: 18px;
+}
+.itm-hero p {
+  line-height: 34px;
+}
+
+/* ******************************************* La 2em section ************************* */
+.sect2 {
+  margin-top: 100px;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+}
+.cont-skills {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.skills h3 {
+  text-align: center;
+  font-size: 40px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #f6961d;
+  margin-bottom: 20px;
+}
+.skill {
+  width: 400px;
+  margin-bottom: 20px;
+}
+
+.skill-top {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.progress {
+  width: 100%;
+  height: 10px;
+  background: #ddd;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  width: 70%;
+  height: 100%;
+  background: #f6961d;
+}
+.css {
+  width: 80%;
+}
+.pyton {
+  width: 60%;
+}
+.php {
+  width: 50%;
+}
+.algo {
+  width: 90%;
+}
+/* ********************* La 3em section ********************** */
+
+.sect3 {
+  margin-top: 80px;
+}
+
+.contact h3 {
+  text-align: center;
+  font-size: 34px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #f6961d;
+  font-weight: 800;
+}
+.contact h4 {
+  font-size: 24px;
+  font-weight: 700;
+}
+.socials {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 auto;
+  justify-items: center;
+  margin-top: 60px;
+}
+
+.social img {
+  width: 60px;
+}
+.s-itms {
+  display: flex;
+  align-items: center;
+}
+.formu {
+  display: flex;
+  /* flex-direction: column; */
+  column-gap: 40px;
+}
+.formu input {
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #f6961d;
+  outline: none;
+}
+.formu input:focus {
+  border: 2px solid #f6961d;
+  box-shadow: 0 0 5px rgba(246, 150, 29, 0.5);
+}
+
+.iform {
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
+}
+.iform label {
+  font-weight: 700;
+}
+.msg {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+textarea {
+  height: 100px;
+  padding: 15px;
+  border: 2px solid #f6961d;
+  outline: none;
+  border-radius: 10px;
+}
+.msg label {
+  font-weight: 700;
+}
+.wat {
+  height: 30px;
+}
+.bnt button {
+  padding: 10px 15px;
+  margin-top: 20px;
+  font-size: 20px;
 }
